@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Anniversary ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&family=Parisienne&family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            overflow-x: hidden;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Parisienne', cursive;
+            font-size: 5rem;
+            margin-top: 2rem;
+            animation: fadeIn 2s ease-in-out;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin: 2rem 0;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .love-animation {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: pink;
+            transform: rotate(45deg);
+            animation: float 6s linear infinite;
+            opacity: 0.8;
+        }
+
+            .heart::before, .heart::after {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-color: pink;
+                border-radius: 50%;
+            }
+
+            .heart::before {
+                top: -10px;
+                left: 0;
+            }
+
+            .heart::after {
+                left: -10px;
+                top: 0;
+            }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(45deg);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: translateY(-10vh) rotate(45deg);
+                opacity: 0;
+            }
+        }
+
+        .quote {
+            font-style: italic;
+            margin: 2rem auto;
+            font-size: 1.7rem;
+            max-width: 800px;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            font-family: 'Great Vibes', cursive;
+        }
+
+        .images {
+            margin: 3rem auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+
+            .images img {
+                width: 260px;
+                height: auto;
+                border-radius: 20px;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+
+                .images img:hover {
+                    transform: scale(1.08);
+                    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+                }
+
+        .music-player {
+            margin: 3rem auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+        }
+
+        .section {
+            margin: 5rem 0;
+        }
+
+        .timeline {
+            max-width: 850px;
+            margin: auto;
+            text-align: left;
+            background: rgba(255,255,255,0.05);
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .timeline-item {
+            margin: 1.2rem 0;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-left: 4px solid #fff;
+            border-radius: 10px;
+        }
+
+        footer {
+            margin: 4rem 0 2rem;
+            font-size: 1rem;
+            opacity: 0.8;
+            font-style: italic;
+        }
+
+        /* VINTAGE LOVE LETTER STYLE */
+        .special-message.long-letter {
+            max-width: 950px;
+            margin: 4rem auto;
+            padding: 3rem;
+            background: rgba(255, 248, 220, 0.95); /* light parchment tone */
+            border-radius: 20px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            line-height: 2;
+            color: #3b2f2f;
+            text-align: justify;
+            overflow: auto;
+            max-height: 75vh;
+            position: relative;
+            border: 2px solid rgba(139, 69, 19, 0.3);
+        }
+
+        .letter-content p:first-of-type::first-letter {
+            font-size: 3rem;
+            float: left;
+            line-height: 1;
+            margin-right: 0.5rem;
+            font-family: 'Great Vibes', cursive;
+            color: #b85c38;
+        }
+    </style>
+</head>
+<body>
+    <div class="love-animation" id="animation-container"></div>
+
+    <h1>Happy 2-Year Anniversary, My Love 💙💜</h1>
+    <div class="quote">
+        "I saw that you were perfect, and so I loved you. Then I saw that you were not perfect and I loved you even more."
+    </div>
+
+    <div class="special-message long-letter">
+        <div class="letter-content">
+            <p>
+                Two years ago, you came into my life and turned my world into a dream. Every smile, every hug, every little moment we've shared — they mean the world to me.
+            </p>
+            <p>
+                I never imagined love could feel this safe, this pure, this real. With you, I’ve discovered what it means to be truly seen and deeply loved. Your kindness, your laughter, your support — they've lit up even my darkest days.
+            </p>
+            <p>
+                Every morning I wake up grateful for you. Every night I sleep with a heart fuller than the day before. You’ve become my home, my favorite place to be.
+            </p>
+            <p>
+                Thank you for choosing me, for believing in us, and for making love so beautiful. I can’t wait to write countless more chapters of this love story with you. Here's to forever, my love. ❤️
+            </p>
+            <p style="margin-top: 2rem; text-align: right;">
+                Always yours,<br />
+                <em>[Your Name]</em>
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>💙You & Me💜</h2>
+        <div class="images">
+            <img src="images/4.jpg" alt="The">
+            <img src="images/1.jpg" alt="Greatest">
+            <img src="images/2.jpg" alt="Princess">
+            <img src="images/3.jpg" alt="Ever">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Our Love Story</h2>
+        <div class="timeline">
+            <div class="timeline-item">💫 My eyes laid upon you and everything as well as my soul changed - [December, 2022]</div>
+            <div class="timeline-item">💌 First and Last "I love you" was and stays with you - [Date Infinite]</div>
+            <div class="timeline-item">🌍 Adventures and life together began - [May, 2023]</div>
+            <div class="timeline-item">🎉 1st of many Anniversary Celebration - [May, 2024]</div>
+            <div class="timeline-item">❤️ Today - 2 Years Strong and Forever to Go</div>
+        </div>
+    </div>
+
+    <div class="section music-player">
+        <h2>Our Song 🎶</h2>
+        <audio controls autoplay loop>
+            <source src="your-song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <footer>
+        Made with 💖 for our love — Forever yours
+    </footer>
+
+    <script>
+        const container = document.getElementById('animation-container');
+        setInterval(() => {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = 3 + Math.random() * 5 + 's';
+            container.appendChild(heart);
+            setTimeout(() => heart.remove(), 8000);
+        }, 250);
+    </script>
+</body>
+</html>
